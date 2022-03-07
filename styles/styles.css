@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik&family=Russo+One&display=swap');
+
+html, body {
+    background-color: #c6fff9;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration:none;
+}
+
+header{
+  box-shadow: 10px 5px 5px #a1fdf4;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 8rem;
+}
+
+.menu{
+    display: inline;
+}
+
+.menu a {
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 30px;
+    color: #7F7FBF;
+}
+
+.menu a:hover {
+    color: #FF859F;
+}
+
+.logo{
+    width: 200px;
+    height: auto;
+}
+
+.logofooter{
+    width: 250px;
+    height: auto;
+}
+
+.banner {
+    position: relative;
+    background-image: url("https://cdn.pixabay.com/photo/2017/05/04/21/23/cupcakes-2285209_960_720.jpg");
+    width: 100%;
+    height: 480px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.slogan {
+    position: absolute;
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    font-weight: 700;
+    color: #E3FFFC;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.seccion {
+    padding: 1rem 8rem;
+    text-align: center;
+}
+
+.seccion h2{
+    font-family: 'Russo One', sans-serif;
+    font-size: 35px;
+    color: #7373c2;
+    padding-bottom: 0.5rem;
+}
+
+.pasteles {
+    display: flex;
+    justify-content: space-around;
+}
+
+.pastel{
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+.pastel img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #FFC2CF;
+  }
+  
+  .pastel:hover .overlay {
+    opacity: 0.9;
+  }
+
+  .overlay .title {
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+    font-weight: 700;
+    color: #E3FFFC;
+  }
+
+  .overlay .price{
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    color: #7373c2;
+  }
+
+  button {
+    background-color: transparent;
+    border: 2px solid #7373c2;
+    border-radius: 10px;
+    color: #7373c2;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Rubik', sans-serif;
+    margin: 4px 20px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  button:hover {
+      border: none;
+      background-color: #7373c2;
+      color: #E3FFFC;
+  }
+
+  .btnComprar{
+    font-size: 16px;
+  }
+
+  .btnPedido{
+      font-size: 25px;
+  }
+
+  .form-content{
+      width: 100%;
+      height: auto;
+      border: #7373c2;
+      border-style: solid;
+      border-radius: 30px;
+      text-align: center;
+      font-family: 'Rubik', sans-serif;
+      color: #7373c2;
+      padding: 30px 50px;
+  }
+
+  .form-content div{
+      margin-bottom: 20px;
+  }
+
+  .input-data input{
+      width: 100%;
+      height: 35px;
+      border-radius: 10px;
+      font-family: 'Rubik', sans-serif;
+      border-color: #7373c2;
+      border-style: solid;
+      color: #7373c2;
+  }
+
+  .input-data input:focus{
+    outline-color: #7373c2;
+  }
+
+  .input-data textarea{
+    width: 98%;
+    height: auto;
+    border-radius: 10px;
+    font-family: 'Rubik', sans-serif;
+    border-color: #7373c2;
+    border-style: solid;
+    color: #7373c2;
+    font-size: 24px;
+    padding: 20px;
+  }
+
+  .input-data textarea:focus{
+    outline-color: #7373c2;
+  }
+
+  .input-data label{
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  .form-content p {
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .sabores, .adornos {
+      display: flex;
+      justify-content:space-around;
+      font-size: 20px;
+  }
+
+  .sabores input, .adornos input{
+      accent-color: #7373c2;
+      width: 20px;
+      height: 20px;
+  }
+  
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #7373c2;
+    color: #E3FFFC;
+    padding: 2rem 8rem;
+    margin-top: 50px;
+    font-family: 'Rubik', sans-serif;
+    color: #c6fff9;
+    font-size: 24px;
+    font-weight: normal;
+  }
+
+  .horario {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    justify-items: end;
+    align-items: flex-end;
+    text-align: end;
+  }
+
+  .horario .titleh{
+      font-weight: 700;
+  }
+  
+    footer p{
+        margin: 5px 0;
+    }
+
+/* Pagina de pastelero */
+
+.seccionA {
+    padding: 1rem 8rem;
+    text-align: start;
+}
+
+.seccionA p{
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+  color: #7373c2;
+}
+
+.seccionA h2{
+    font-family: 'Russo One', sans-serif;
+    font-size: 30px;
+    color: #7373c2;
+    padding-bottom: 0.5rem;
+}
+
+#pedidos {
+    font-family: 'Rubik', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #pedidos td, #pedidos th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #pedidos tr:nth-child(even){background-color: #f2f2f2;}
+
+  #pedidos tr:nth-child(odd){background-color: #ffffff;}
+  
+  #pedidos tr:hover {background-color: #ddd;}
+  
+  #pedidos th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color:#7373c2;
+    color: white;
+  }
+
+  .cards-insumos {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 350px;
+    height: auto;
+    padding: 20px 0;
+    border-radius: 20px;
+    background-color: #74EBD5;
+    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+    
+  }
+
+  .card h3{
+    font-family: 'Russo One', sans-serif;
+    font-size: 24px;
+    color: #7373c2;
+    margin: 0;
+  }
+
+  .card p{
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    color: #E3FFFC;
+    margin: 0;
+  }

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keyquito Pasteleria</title>
+
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <img src="./assets/logo.png" class="logo" alt="logo" />
+
+      <nav class="menu">
+        <a href="#">INICIO</a>
+        <a href="#npasteles">NUESTRO PASTELES</a>
+        <a href="#personaliza">PERSONALIZA</a>
+        <a href="admin.html">DASHBOARD</a>
+      </nav>
+    </header>
+
+    <section class="banner">
+      <p class="slogan">Cumplimos tus dulces deseos</p>
+    </section>
+
+    <section class="seccion" >
+      <a name="npasteles"></a> 
+      <h2>Nuestros pasteles</h2>
+      <div class="pasteles">
+        <article class="pastel">
+          <img src="./assets/redvelvet.jpg" alt="" />
+          <div class="overlay">
+            <p class="title">Red Velvet</p>
+            <p class="price">MXN $ 439.00</p>
+            <button class="btnComprar">Hacer Pedido</button>
+          </div>
+        </article>
+        <article class="pastel">
+          <img src="./assets/cheesecake.jpg" alt="" />
+          <div class="overlay">
+            <p class="title">Cheese Cake</p>
+            <p class="price">MXN $ 399.00</p>
+            <button class="btnComprar">Hacer Pedido</button>
+          </div>
+        </article>
+        <article class="pastel">
+          <img src="./assets/flan.jpg" alt="" />
+          <div class="overlay">
+            <p class="title">Chocoflan</p>
+            <p class="price">MXN $ 359.00</p>
+            <button class="btnComprar">Hacer Pedido</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <a name="personaliza"></a>
+      <h2>Personaliza tu keyquito</h2>
+
+      <div class="form-content">
+
+        <div class="input-data">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="input-data">
+            <label for="email">Correo Electrónico:</label>
+            <input type="text" id="email" name="email" required>
+        </div>
+
+        <div class="input-data">
+            <label for="name">Descripción:</label>
+            <textarea name="descripcion" id="descripcion" cols="8"></textarea>
+        </div>
+        <p>Seleccione el sabor</p>
+        <div class="sabores">
+          <div>
+            <input type="checkbox" id="fresa" name="cakeflavors" value="fresa" checked />
+            <label for="fresa">Fresa</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="zarzamora" name="cakeflavors" value="zarzamora" />
+            <label for="zarzamora">Zarzamora</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="durazno" name="cakeflavors" value="durazno" />
+            <label for="durazno">Durazno</label>
+          </div>
+        </div>
+
+        <p>Seleccione el adorno</p>
+        <div class="adornos">
+          <div>
+            <input type="checkbox" id="sencillo" name="cakeadornos" value="sencillo" checked />
+            <label for="sencillo">Sencillo</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="marmoleado" name="cakeadornos" value="marmoleado" />
+            <label for="marmoleado">Marmoleado</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="fondant" name="cakeadornos" value="fondant" />
+            <label for="fondant">Fondant</label>
+          </div>
+        </div>
+
+        <button class="btnPedido">Hacer Pedido</button>
+      </div>
+    </section>
+
+    <footer>
+      <section class="address">
+        <img src="./assets/logolight.png" class="logofooter" alt="logo" />
+        <p>Calle Las Flores #456, Col. Centro</p>
+        <p>Oaxaca de Juárez, Oaxaca</p>
+        <p>Telefono: 951 111 11 11</p>
+      </section>
+
+      <section class="horario">
+          <p class="titleh">Horarios de atención</p>
+          <p>Lunes a Viernes | 09:00 a 19:00 hrs</p>
+          <p>Sábado y Domingo | 09:00 a 15:00 hrs</p>
+      </section>
+    </footer>
+  </body>
+</html>
