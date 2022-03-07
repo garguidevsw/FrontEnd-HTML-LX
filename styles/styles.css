@@ -165,8 +165,6 @@ header{
   }
 
   .form-content{
-      width: 100%;
-      height: auto;
       border: #7373c2;
       border-style: solid;
       border-radius: 30px;
@@ -320,7 +318,7 @@ header{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 350px;
+    width: 450px;
     height: auto;
     padding: 20px 0;
     border-radius: 20px;
